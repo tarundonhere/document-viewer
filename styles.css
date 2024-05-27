@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #eecfcf; /* Assuming pink background */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Take the remaining space */
+  justify-content: space-between; /* Ensure footer is at the bottom */
+  align-items: center;
+  width: 80%; /* Limit container width */
+  margin: 50px auto; /* Add some margin around the container */
+  background-color: #fff; /* White background for the app container */
+  border-radius: 5px; /* Add some rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px; /* Add some padding inside the container */
+}
+
+#header {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3em;
+  color: #333; /* Adjust title color for better contrast */
+  font-weight: bold; /* Make title bold */
+  margin-bottom: 20px; /* Add some space after the title */
+}
+
+#content {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  width: 100%;
+}
+
+#sidebar {
+  flex: 0 0 100px; /* Fixed width for sidebar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px; /* Add some space between sidebar and main content */
+}
+
+.logo {
+  width: 80px; /* Set a fixed width for the logos */
+  height: auto;
+  margin-bottom: 20px; /* Add some space between logos */
+  cursor: pointer; /* Make logos clickable */
+}
+
+#main-content {
+  flex: 1; /* Take the remaining space */
+}
+
+#fileInput {
+  display: block;
+  margin-bottom: 30px; /* Add some space between file input and textarea */
+}
+
+#wordContent {
+  width: 90%; /* Increase the width by 30% */
+  min-height: 400px; /* Increase the minimum height for the text area */
+  padding: 10px; /* Add some padding for better readability */
+  border: 2px solid #ccc; /* Add a thin border */
+  border-radius: 3px; /* Add some rounded corners */
+  font-family: inherit; /* Inherit font family from body */
+  font-size: 16px; /* Set a comfortable font size */
+  resize: vertical; /* Allow users to resize the text area horizontally */
+  background-color: #fff; /* White background for the text area */
+}
